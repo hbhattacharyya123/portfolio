@@ -70,7 +70,7 @@ Flags are made using Wikipedia images
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
         {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - place of residence"},
-        {"flag": "2/25/Flag_of_the_European_Union.svg", "greeting": "Hi", "description": "Europe - France, Germany, Italy, Greece"},
+        {"flag": "b/b7/Flag_of_the_European_Union.svg", "greeting": "Hi", "description": "Europe - France, Germany, Italy, Greece"},
         {"flag": "4/48/Flag_of_Singapore.svg", "greeting": "What's up", "description": "Singapore"},
         {"flag": "c/cb/Flag_of_the_United_Arab_Emirates.svg", "greeting": "Marhaba", "description": "United Arab Emirates - Dubai"},
         {"flag": "4/41/Flag_of_India.svg", "greeting": "Namaste", "description": "India - Mumbai and Kolkata"},
