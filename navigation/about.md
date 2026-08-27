@@ -9,7 +9,7 @@ comments: true
 ## As a conversation Starter
 
 
-Here are some places I have visited.
+Here are some places I have visited:
 
 
 <comment>
