@@ -138,8 +138,8 @@ Everything for me, as for many others, revolves around family.
 Some pics ...
 </comment>
 <div class="image-gallery">
-  <img src="c:\Users\tushn\OneDrive\Pictures\Camera Roll\WIN_20220929_18_42_01_Pro.jpg" alt="Pic 1">
-  <img src="c:\Users\tushn\OneDrive\Pictures\Camera Roll\WIN_20220929_18_30_57_Pro.jpg" alt="Pic 2">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7gQORF59Mqsm0hZDYA-XTrGavOyQNaMW4xXtWuqSCDg&s=10" alt="Pic 1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7TitSgH8nkyaG5bzK_p6cUjlqbjkC-GLNWaf9FQgTug&s=10" alt="Pic 2">
   
 </div>
 
