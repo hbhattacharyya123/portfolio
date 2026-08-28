@@ -139,7 +139,7 @@ Some pics ...
 </comment>
 <div class="image-gallery">
   <img src="c:\Users\tushn\OneDrive\Pictures\Camera Roll\WIN_20220929_18_42_01_Pro.jpg" alt="Pic 1">
-  <img src="c:\Users\tushn\OneDrive\Pictures\Camera Roll\WIN_20220929_18_30_57_Pro.jpg" alt="Pic 1">
+  <img src="c:\Users\tushn\OneDrive\Pictures\Camera Roll\WIN_20220929_18_30_57_Pro.jpg" alt="Pic 2">
   
 </div>
 
