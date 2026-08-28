@@ -138,7 +138,9 @@ Everything for me, as for many others, revolves around family.
 Some pics ...
 </comment>
 <div class="image-gallery">
-  <img src="https://en.wikipedia.org/wiki/File:Flag_of_India.svg" alt="India flag">
+  <img src="c:\Users\tushn\OneDrive\Pictures\Camera Roll\WIN_20220929_18_42_01_Pro.jpg" alt="Pic 1">
+  <img src="c:\Users\tushn\OneDrive\Pictures\Camera Roll\WIN_20220929_18_30_57_Pro.jpg" alt="Pic 1">
+  
 </div>
 
 
