@@ -9,7 +9,7 @@ comments: true
 ## As a conversation Starter
 
 
-Here are some places I have visited:
+Here are some places that I have visited:
 
 
 <comment>
@@ -135,11 +135,10 @@ Everything for me, as for many others, revolves around family.
 
 
 <comment>
-Gallery of Pics, scroll to the right for more ...
+Some pics ...
 </comment>
 <div class="image-gallery">
-  <img src="https://en.wikipedia.org/wiki/File:Flag_of_India.svg" alt="Image 1">
-  <img src="0/01/Flag_of_California.svg" alt="Image 2">
+  <img src="https://en.wikipedia.org/wiki/File:Flag_of_India.svg" alt="India flag">
 </div>
 
 
