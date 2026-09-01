@@ -117,6 +117,6 @@ Everything for me, as for many others, revolves around family
 Some pics...
 </comment>
 <div class="image-gallery">
-  <img src="https://www.google.com/imgres?q=pizza&imgurl=https%3A%2F%2Fwww.recipetineats.com%2Ftachyon%2F2023%2F05%2FGarlic-cheese-pizza_9.jpg&imgrefurl=https%3A%2F%2Fwww.recipetineats.com%2Fgarlic-cheese-pizza%2F&docid=q1QEfArNbtrKPM&tbnid=hC6g14ntYr3OqM&vet=12ahUKEwj2jNne3c2WAxURJkQIHRk0Ab4QnPAOegQIQxAA..i&w=900&h=1125&hcb=2&ved=2ahUKEwj2jNne3c2WAxURJkQIHRk0Ab4QnPAOegQIQxAA" alt="Image 1">
-  <img src="https://www.google.com/imgres?q=ice%20cream&imgurl=https%3A%2F%2Fwww.cravethegood.com%2Fwp-content%2Fuploads%2F2021%2F04%2Fsous-vide-chocolate-ice-cream-15.jpg&imgrefurl=https%3A%2F%2Fwww.cravethegood.com%2Fsous-vide-chocolate-ice-cream%2F&docid=va1yc0oDrfApLM&tbnid=6cYY3grIMgrI2M&vet=12ahUKEwii7Zvr3c2WAxWvBrwBHSKDK3sQnPAOegQIQxAA..i&w=1467&h=2200&hcb=2&ved=2ahUKEwii7Zvr3c2WAxWvBrwBHSKDK3sQnPAOegQIQxAA" alt="Image 2">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7gQORF59Mqsm0hZDYA-XTrGavOyQNaMW4xXtWuqSCDg&s=10" alt="Image 1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4mkIJqXm99fm8T2tyrWdJOYG4r3osGniM1KMjsPOOvQ&s=10" alt="Image 2">
 </div>
