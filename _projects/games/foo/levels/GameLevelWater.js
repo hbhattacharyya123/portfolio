@@ -72,9 +72,9 @@ class GameLevelWater {
           // Set a primary game reference from the game environment
           let primaryGame = gameEnv.gameControl;
           // Define the game in game level
-          // let levelArray = [GameLevelStarWars];
+          let levelArray = [GameLevelStarWars];
           // Define a new GameControl instance with the StarWars level
-          let gameInGame = new GameControl(path, [GameLevelStarWars]);
+          let gameInGame = new GameControl(path, levelArray);
           // Pause the primary game 
           
           // Start the game in game
@@ -82,10 +82,11 @@ class GameLevelWater {
           // Setup "callback" function to allow transition from game in gaame to the underlying game
           gameInGame.gameOver = function() {
             // Call .resume on primary game
-            primaryGame.resume();
+            //primaryGame.resume();
           }
-          primaryGame.pause();
+          
           gameInGame.start();
+          primaryGame.pause();
         }
       };
 
