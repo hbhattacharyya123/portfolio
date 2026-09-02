@@ -87,6 +87,36 @@ class GameLevelWater {
           
           gameInGame.start();
           primaryGame.pause();
+          setTimeout(() => {
+                // Pause the primary game without destroying the current level
+                // so player position/state can be restored after mini-game skip/end.
+                    primaryGame.pause();
+                
+                    // Now create and start the new game
+                    let levelArray = [GameLevelStarWars];
+                    let gameInGame = new GameControl(gameEnv.game, levelArray, { parentControl: primaryGame });
+                // Hide parent canvases so the nested StarWars mini-game doesn't show underlying NPCs
+                try {
+                    if (typeof primaryGame.hideCanvasState === 'function') {
+                    primaryGame.hideCanvasState();
+                    }
+                } catch (e) {
+                    console.warn('Could not hide parent canvas state for nested StarWars', e);
+                }
+                gameInGame.start();
+                
+                    // Setup return to main game after mini-game ends
+                    gameInGame.gameOver = function() {
+                        primaryGame.resume();
+                    };
+
+                    // Fade out
+                    fadeOverlay.style.opacity = '0';
+                    setTimeout(() => {
+                        document.body.removeChild(fadeOverlay);
+                    }, 1000); // Wait for fade-out to finish
+
+                }, totalDuration + 200); // Delay a bit after loading bar finishes
         }
       };
 
