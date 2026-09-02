@@ -30,7 +30,7 @@ class GameLevelWater {
     const sprite_data_octopus = {
         id: 'Octopus',
         name: 'mainplayer',
-        greeting: "Hi I am Octopus, the water wanderer. I am looking for wisdome and adventure!",
+        greeting: "Hi I am Octopus, the water wanderer. I am looking for wisdom and adventure!",
         src: sprite_src_octopus,
         SCALE_FACTOR: OCTOPUS_SCALE_FACTOR,
         STEP_FACTOR: 1000,
@@ -45,7 +45,7 @@ class GameLevelWater {
         left: {row: 1, start: 0, columns: 2, mirror: true }, // mirror is used to flip the sprite
         right: {row: 1, start: 0, columns: 2 },
         up: {row: 0, start: 0, columns: 2},
-        upLeft: {row: 1, start: 0, columns: 2, mirror: true, rotate: -Math.Pi/16 }, // mirror is used to flip the sprite
+        upLeft: {row: 1, start: 0, columns: 2, mirror: true, rotate: -Math.PI/16 }, // mirror is used to flip the sprite
         upRight: {row: 1, start: 0, columns: 2, rotate: Math.PI/16 },
         hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 },
         keypress: { up: 87, left: 65, down: 83, right: 68 } // W, A, S, D
@@ -72,18 +72,20 @@ class GameLevelWater {
           // Set a primary game reference from the game environment
           let primaryGame = gameEnv.gameControl;
           // Define the game in game level
-          let levelArray = [GameLevelStarWars];
+          // let levelArray = [GameLevelStarWars];
           // Define a new GameControl instance with the StarWars level
-          let gameInGame = new GameControl(path,levelArray);
+          let gameInGame = new GameControl(path, [GameLevelStarWars]);
           // Pause the primary game 
-          primaryGame.pause();
+          
           // Start the game in game
-          gameInGame.start();
+          
           // Setup "callback" function to allow transition from game in gaame to the underlying game
           gameInGame.gameOver = function() {
             // Call .resume on primary game
             primaryGame.resume();
           }
+          primaryGame.pause();
+          gameInGame.start();
         }
       };
 
