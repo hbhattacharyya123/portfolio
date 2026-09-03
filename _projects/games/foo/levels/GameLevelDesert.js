@@ -719,8 +719,6 @@ class GameLevelDesert {
             src: sprite_src_alex,
             SCALE_FACTOR: 8,
             STEP_FACTOR: 1000,
-            height: 256,
-            width: 256,
             ANIMATION_RATE: 50,
             INIT_POSITION: { x: 0.4, y: 0.4 },  // 40% from left, 40% from top (near bottom)
             pixels: {height: 256, width: 128},

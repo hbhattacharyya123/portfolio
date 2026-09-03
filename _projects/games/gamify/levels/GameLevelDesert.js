@@ -707,6 +707,36 @@ class GameLevelDesert {
             }, 100);
 
             desertAnimationInterval = setInterval(() => {
+        const sprite_data_alex = {
+            id: 'Alex',
+            greeting: "Hi I am Alex. Would you like to help me and Steve get our pet chicken?",
+            src: path + "/images/projects/gamify/Alex.png",
+            SCALE_FACTOR: 7,
+            STEP_FACTOR: 1000,
+            ANIMATION_RATE: 25,
+            INIT_POSITION: { x: 0.4, y: 0.4 },
+            pixels: { height: 256, width: 128 },
+            orientation: { rows: 8, columns: 4 },
+            down: { row: 1, start: 0, columns: 4 },
+            downRight: { row: 7, start: 0, columns: 4, rotate: Math.PI / 8 },
+            downLeft: { row: 5, start: 0, columns: 4, rotate: -Math.PI / 8 },
+            left: { row: 5, start: 0, columns: 4 },
+            right: { row: 7, start: 0, columns: 4 },
+            up: { row: 3, start: 0, columns: 4 },
+            upLeft: { row: 5, start: 0, columns: 4, rotate: Math.PI / 8 },
+            upRight: { row: 7, start: 0, columns: 4, rotate: -Math.PI / 8 },
+            hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 },
+            interact: function() {
+                if (this.dialogueSystem && this.dialogueSystem.isDialogueOpen()) {
+                    this.dialogueSystem.closeDialogue();
+                }
+                this.dialogueSystem.showDialogue(
+                    this.spriteData.greeting,
+                    this.spriteData.id,
+                    this.spriteData.src
+                );
+            }
+        };
             // Resume any animation logic if needed
             }, 5000);
         };
@@ -726,6 +756,7 @@ class GameLevelDesert {
             { class: Npc, data: sprite_data_crypto },
             { class: Npc, data: sprite_data_chickenj },
             { class: Clicker, data: sprite_data_historian },
+            { class: Npc, data: sprite_data_alex },
         ];
 
     } // End of GameLevelDesert constructor
