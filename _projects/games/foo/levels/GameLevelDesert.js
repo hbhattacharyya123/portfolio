@@ -723,18 +723,18 @@ class GameLevelDesert {
             width: 256,
             ANIMATION_RATE: 50,
             INIT_POSITION: { x: 0.4, y: 0.4 },  // 40% from left, 40% from top (near bottom)
-            pixels: {height: 384, width: 512},
-            orientation: {rows: 3, columns: 4 },
-            down: {row: 0, start: 0, columns: 3 },
-            downRight: {row: 1, start: 0, columns: 3, rotate: Math.PI/16 },
-            downLeft: {row: 2, start: 0, columns: 3, rotate: -Math.PI/16 },
-            left: {row: 2, start: 0, columns: 3 },
-            right: {row: 1, start: 0, columns: 3 },
-            up: {row: 0, start: 0, columns: 3 },
-            upLeft: {row: 2, start: 0, columns: 3, rotate: Math.PI/16 },
-            upRight: {row: 1, start: 0, columns: 3, rotate: -Math.PI/16 },
-            hitbox: { widthPercentage: 0.45, heightPercentage: 0.4 },
-            keypress: { up: 87, left: 65, down: 83, right: 68 }, // W, A, S, D
+            pixels: {height: 256, width: 128},
+            orientation: {rows: 8, columns: 4 },
+            down: {row: 1, start: 0, columns: 4 },
+            downRight: {row: 7, start: 0, columns: 4, rotate: Math.PI/8 },
+            downLeft: {row: 5, start: 0, columns: 4, rotate: -Math.PI/8 },
+            left: {row: 5, start: 0, columns: 4 },
+            right: {row: 7, start: 0, columns: 4 },
+            up: {row: 3, start: 0, columns: 4 },
+            upLeft: {row: 5, start: 0, columns: 4, rotate: Math.PI/8 },
+            upRight: {row: 7, start: 0, columns: 4, rotate: -Math.PI/8 },
+            hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 },
+            keypress: { up: 73, left: 74, down: 75, right: 76 }, // I, J, K, L for Alex
             interact: function() {
                 if (this.dialogueSystem && this.dialogueSystem.isDialogueOpen()) {
                     this.dialogueSystem.closeDialogue();
