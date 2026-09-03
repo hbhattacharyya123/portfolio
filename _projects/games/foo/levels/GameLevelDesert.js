@@ -712,7 +712,28 @@ class GameLevelDesert {
         };
 
 
-
+        const sprite_src_alex = path + "/images/projects/gamify/alex.png";
+        const sprite_data_alex = {
+            id: 'Alex',
+            greeting: "Hi I am Alex. Would you like to help me and Steve get our pet chicken?",
+            src: sprite_src_alex,
+            SCALE_FACTOR: 8,
+            STEP_FACTOR: 1000,
+            ANIMATION_RATE: 50,
+            INIT_POSITION: { x: 0.9, y: 0.9 },  // 90% from left, 90% from top (near bottom)
+            pixels: {height: 384, width: 512},
+            orientation: {rows: 3, columns: 4 },
+            down: {row: 0, start: 0, columns: 3 },
+            downRight: {row: 1, start: 0, columns: 3, rotate: Math.PI/16 },
+            downLeft: {row: 2, start: 0, columns: 3, rotate: -Math.PI/16 },
+            left: {row: 2, start: 0, columns: 3 },
+            right: {row: 1, start: 0, columns: 3 },
+            up: {row: 0, start: 0, columns: 3 },
+            upLeft: {row: 2, start: 0, columns: 3, rotate: Math.PI/16 },
+            upRight: {row: 1, start: 0, columns: 3, rotate: -Math.PI/16 },
+            hitbox: { widthPercentage: 0.45, heightPercentage: 0.4 },
+            keypress: { up: 87, left: 65, down: 83, right: 68 } // W, A, S, D
+        };
         // List of objects defnitions for this level
         this.classes = [
             { class: GamEnvBackground, data: image_data_desert },
@@ -726,6 +747,7 @@ class GameLevelDesert {
             { class: Npc, data: sprite_data_crypto },
             { class: Npc, data: sprite_data_chickenj },
             { class: Clicker, data: sprite_data_historian },
+            { class: Alex, data: sprite_data_alex },
         ];
 
     } // End of GameLevelDesert constructor
