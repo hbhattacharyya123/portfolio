@@ -712,13 +712,15 @@ class GameLevelDesert {
         };
 
 
-        const sprite_src_alex = path + "/images/projects/gamify/alex.png";
+        const sprite_src_alex = path + "/images/projects/gamify/Alex.png";
         const sprite_data_alex = {
             id: 'Alex',
             greeting: "Hi I am Alex. Would you like to help me and Steve get our pet chicken?",
             src: sprite_src_alex,
             SCALE_FACTOR: 8,
             STEP_FACTOR: 1000,
+            height: 256,
+            width: 256,
             ANIMATION_RATE: 50,
             INIT_POSITION: { x: 0.4, y: 0.4 },  // 40% from left, 40% from top (near bottom)
             pixels: {height: 384, width: 512},
@@ -783,7 +785,7 @@ class GameLevelDesert {
             { class: Npc, data: sprite_data_crypto },
             { class: Npc, data: sprite_data_chickenj },
             { class: Clicker, data: sprite_data_historian },
-            { class: Alex, data: sprite_data_alex },
+            { class: Player, data: sprite_data_alex },
         ];
 
     } // End of GameLevelDesert constructor
