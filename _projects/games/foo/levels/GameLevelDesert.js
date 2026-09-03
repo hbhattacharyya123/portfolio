@@ -720,7 +720,7 @@ class GameLevelDesert {
             SCALE_FACTOR: 8,
             STEP_FACTOR: 1000,
             ANIMATION_RATE: 50,
-            INIT_POSITION: { x: 0.9, y: 0.9 },  // 90% from left, 90% from top (near bottom)
+            INIT_POSITION: { x: 0.4, y: 0.4 },  // 40% from left, 40% from top (near bottom)
             pixels: {height: 384, width: 512},
             orientation: {rows: 3, columns: 4 },
             down: {row: 0, start: 0, columns: 3 },
@@ -732,7 +732,43 @@ class GameLevelDesert {
             upLeft: {row: 2, start: 0, columns: 3, rotate: Math.PI/16 },
             upRight: {row: 1, start: 0, columns: 3, rotate: -Math.PI/16 },
             hitbox: { widthPercentage: 0.45, heightPercentage: 0.4 },
-            keypress: { up: 87, left: 65, down: 83, right: 68 } // W, A, S, D
+            keypress: { up: 87, left: 65, down: 83, right: 68 }, // W, A, S, D
+            interact: function() {
+                if (this.dialogueSystem && this.dialogueSystem.isDialogueOpen()) {
+                    this.dialogueSystem.closeDialogue();
+                }
+                
+                if (!this.dialogueSystem) {
+                    this.dialogueSystem = new DialogueSystem();
+                }
+                
+                this.dialogueSystem.showDialogue(
+                    "Hi I am Alex. Would you like to help me and Steve get our pet chicken?",
+                    "Help?",
+                    this.spriteData.src
+                );
+                
+                this.dialogueSystem.addButtons([
+                    {
+                        text: "Yes!",
+                        primary: true,
+                        action: () => {
+                            this.dialogueSystem.closeDialogue();
+                            pauseRpg();
+                            platformerMini.onExit = () => {
+                                resumeRpg();
+                            };
+                            platformerMini.start();
+                        }
+                    },
+                    {
+                        text: "Not Ready",
+                        action: () => {
+                            this.dialogueSystem.closeDialogue();
+                        }
+                    }
+                ]);
+            }
         };
         // List of objects defnitions for this level
         this.classes = [
