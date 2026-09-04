@@ -724,7 +724,15 @@ class GameLevelDesert {
             left: { row: 5, start: 0, columns: 4 },
             right: { row: 7, start: 0, columns: 4 },
             up: { row: 3, start: 0, columns: 4 },
-            hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 }
+            hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 },
+            interact: function() {
+               const primaryGame = gameEnv.gameControl;
+               primaryGame.pause();
+               const geoDashGame = new GameControl(gameEnv.game, [GeoDash], {
+                   parentControl: primaryGame
+               });
+               geoDashGame.start();
+           }
         };
 
 
