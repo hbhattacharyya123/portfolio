@@ -486,7 +486,6 @@ class GameLevelEnd {
       { class: Player, data: sprite_data_steve },
       { class: Npc, data: sprite_data_endship },
       { class: Collectible, data: sprite_data_eye },
-      { class: Player, data: sprite_data_alex },
       { class: Enemy, data: sprite_data_enemy }
     ];
     

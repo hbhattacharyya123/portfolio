@@ -82,35 +82,6 @@ class GameLevelEnd {
         */
     };
     
-    const sprite_src_alex = path + "/images/projects/gamify/Alex.png";
-    const alex_SCALE_FACTOR = 7;
-    const sprite_data_alex = {
-        id: 'Alex',
-        greeting: "Hi, I am Alex",
-        src: sprite_src_alex,
-        SCALE_FACTOR: alex_SCALE_FACTOR,
-        STEP_FACTOR: 1000,
-        ANIMATION_RATE: 25,
-        
-        INIT_POSITION: { x: 0, y: height/2 },
-        pixels: {height: 256, width: 128},
-        orientation: {rows: 8, columns: 4 },
-        down: {row: 1, start: 0, columns: 4 },
-        downRight: {row: 7, start: 0, columns: 4, rotate: Math.PI/8 },
-        downLeft: {row: 5, start: 0, columns: 4, rotate: -Math.PI/8 },
-        left: {row: 5, start: 0, columns: 4 },
-        right: {row: 7, start: 0, columns: 4 },
-        up: {row: 3, start: 0, columns: 4 },
-        upLeft: {row: 5, start: 0, columns: 4, rotate: Math.PI/8 },
-        upRight: {row: 7, start: 0, columns: 4, rotate: -Math.PI/8 },
-        hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 },
-        keypress: { up: 73, left: 74, down: 75, right: 76, interact: 85 }, // Using I, J, K, L for Alex to differentiate from Steve
-        touchOptions: {
-          interactLabel: "u",
-          position: "right"
-        }
-    };
-
     // Store a reference to the current instance to use in closures
     const self = this;
 
@@ -485,7 +456,6 @@ class GameLevelEnd {
       { class: Player, data: sprite_data_steve },
       { class: Npc, data: sprite_data_endship },
       { class: Collectible, data: sprite_data_eye },
-      { class: Player, data: sprite_data_alex },
       { class: Enemy, data: sprite_data_enemy }
     ];
     
