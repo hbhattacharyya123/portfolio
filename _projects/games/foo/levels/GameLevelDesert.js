@@ -739,7 +739,7 @@ class GameLevelDesert {
 
 
        const sprite_src_steve = path + '/images/projects/gamify/end_steve.png';
-       const sprite_greet_steve = 'Hi. I\'m Steve. Press E to enter Steve Dash!';
+       const sprite_greet_steve = 'Hi. I\'m Steve. Press E to enter Steve Dash.';
        const sprite_data_steve = {
            id: 'Steve',
            greeting: sprite_greet_steve,
