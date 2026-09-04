@@ -8,7 +8,7 @@ import AiNpc from '@assets/js/GameEnginev1.1/essentials/AiNpc.js';
 import Clicker from '@assets/js/GameEnginev1.1/essentials/Clicker.js';
 import Coin from '@assets/js/GameEnginev1.1/Coin.js';
 import GameLevelStarWars from './GameLevelStarWars.js';
-import GeoDash from './GeoDash.js';
+import GeoDash from '../../gamify/levels/GeoDash.js';
 import PlatformerMini from './PlatformerMini.js';
 
 
