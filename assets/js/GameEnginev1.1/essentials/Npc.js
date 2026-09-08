@@ -184,6 +184,12 @@ class Npc extends Character {
             }
         }
     }
+
+    handleClick() {
+        if (typeof this.interact === 'function') {
+            this.interact.call(this);
+        }
+    }
     
     // Method for showing reaction dialogue
     showReactionDialogue() {
