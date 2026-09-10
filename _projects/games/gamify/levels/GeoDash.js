@@ -49,7 +49,7 @@ class GeoDashRunner {
        this.steve = new Image();
        this.steve.src = `${gameEnv.path}/images/projects/gamify/end_steve.png`;
        this.alex = new Image();
-       this.alex.src = `${gameEnv.path}/images/projects/gamify/end_steve.png`;
+       this.alex.src = `${gameEnv.path}/images/projects/gamify/Alex.png`;
   
        this.keys = new Set();
   
